@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <div class="container-fluid">
+        <head>
+
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+                <link rel="stylesheet" type="text/css" href="css/activity.css">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+                
+                <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+
+
+                <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                <script type="text/javascript" src="js/activity.js"></script>
+                <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+                <script src="http://d3js.org/d3.v3.min.js"></script>
+               <script type="text/javascript">( function () {window.__Bottr = { u: "5b56a06c130f7013fb77d0a3" };var url = "https://d279m54f1qquet.cloudfront.net/embed/bottr.js?" + Date.now();var element = document.createElement("script");element.id = "bottr-init-js";element.type = "text/javascript";element.dataset.cfasync = "false";element.src = url;document.getElementsByTagName("body")[0].appendChild(element);})();</script>
+        </head>
+
+
+
+        <body>
+                <div class="row">
+                        <h1>Activity</h1>
+                        <div class="col-md-6">
+                                        
+                                
+                                          
+                                                        <div class="box1">
+                                                                        <h2>Date</h2>
+                                               
+                                                                        <input type='date'/>
+                                                        </div>
+                                                        <div class="box2">
+                                                                        <h2>Advice</h2>
+                                                                        <img src="img/advice.png" style="height:80px; width: 80px; padding-bottom: 10px;">
+                                                                       
+                                                        </div>
+                                                        <div class="box3">
+                                                                        <h2>Nutrition</h2>
+                                                                        <img src="img/nutrition.png" style="height:80px; width: 80px; padding-bottom: 10px;">
+                                                                        
+                                                                       
+                                                        </div>
+                                                        
+                                                <br>
+
+                                        <div class="grid">
+                                                        <div class="box">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="630px" height="300px">
+                                                                        <line class="top" x1="0" y1="0" x2="900" y2="0"/>
+                                                                        <line class="left" x1="0" y1="460" x2="0" y2="-920"/>
+                                                                        <line class="bottom" x1="630" y1="300" x2="-630" y2="300"/>
+                                                                        <line class="right" x1="630" y1="0" x2="630" y2="1380"/>
+                                                                </svg>
+                                                                <center><h3 style="font-size: 40px">Calories Consumed From Food</h3></center>
+                                                                <div id="chartContainer" style="height: 195px; width: 200px;">
+                                                                        
+                                                                </div>
+                                                                <div class="img1">
+                                                                        <img src="img/burger.png" style="width:240px; height:195px; padding-right:5px; padding-left:20px;">
+                                                                        <span class='add-new' style='width: 100px; height: 100px;'></span>
+                                                                        <span></span>
+                                                                </div>
+                                                               
+                                                                       
+                                                              
+                                                                
+                                                        </div>
+                                                        <br>
+                                                        <br>
+                                                        <br>
+                                                        <div class="box">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="630px" height="300px">
+                                                                        <line class="top" x1="0" y1="0" x2="900" y2="0"/>
+                                                                        <line class="left" x1="0" y1="460" x2="0" y2="-920"/>
+                                                                        <line class="bottom" x1="630" y1="300" x2="-630" y2="300"/>
+                                                                        <line class="right" x1="630" y1="0" x2="630" y2="1380"/>
+                                                                </svg>
+                                                                <center><h3 style="font-size: 40px">Calories Burnt By Activity</h3></center>
+                                                                <div id="chartContainer" style="height: 180px; width: 200px;">
+                                                                        
+                                                                
+        
+                                                                        <script>
+                                                                        var canvastest = d3.select("body")
+                                                                                        .append("svg")
+                                                                                        .attr("width", 150)
+                                                                                        .attr("height", 150);
+
+                                                                        var circle = canvastest.append("circle")
+                                                                                                .attr("cx", 100)
+                                                                                                .attr("cy", 100)
+                                                                                                .attr("r", 50)
+                                                                                                .attr("fill", "#007B78");
+
+                                                                        </script>
+                                                                </div>
+
+                                                                
+                                                                <div class="img1">
+                                                                       
+                                                                        <img src="img/lotus-position.png" style="width:250px; height:195px; padding-right:5px; padding-left:20px;">
+                                                                        <span></span>
+                                                                        <button class='add-new' style='width: 100px; height: 100px;' onclick="myFunctiontwo()">Click Me</button>
+
+                                                                        <div class="twoDiv" id="my2DIV">
+                                                                                
+                                                                        </div> 
+                                                                </div>
+                                                                
+                                                                
+
+                                                        </div>
+                                                        <br>
+                                                        <br>
+                                                        <br>
+                                                
+                                                        <div class="box">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="630px" height="300px">
+                                                                        <line class="top" x1="0" y1="0" x2="900" y2="0"/>
+                                                                        <line class="left" x1="0" y1="460" x2="0" y2="-920"/>
+                                                                        <line class="bottom" x1="630" y1="300" x2="-630" y2="300"/>
+                                                                        <line class="right" x1="630" y1="0" x2="630" y2="1380"/>
+                                                                </svg>
+                                                                <center><h3 style="font-size: 40px">Weight Goals</h3></center>
+                                                                <div id="chartContainer" style="height: 180px; width: 200px;">
+                                                                        
+                                                                </div>
+                                                                <div class="img1">
+                                                                        <img src="img/fitness.png" style=" height:195px; width:250px; padding-right:5px; padding-left:20px;">
+                                                                        
+                                                                        <span></span>
+                                                                
+                                                                                <button class='add-new' style='width: 100px; height: 100px;' onclick="myFunction()">Click Me</button>
+
+                                                                                        <div class="oneDiv" id="myDIV">
+                                                                                                
+                                                                                        </div> 
+                                                                </div>
+                                                                
+                                                        </div>
+                                                </div>
+
+                                        
+                                        
+                                                
+                                        
+
+
+                        </div>
+                        
+
+
+                        
+                        <div class="col-md-6">
+
+                                        
+                                                
+                                                <div class="container1">
+                                                        <button class="round-border" type="button" onclick="showHide(event)" href="#">Breakfast</button>
+                                                        
+                                                        
+                                                        <div class="progressAnimation" style="display:none">
+                                                                
+                                                                <input type="text" name="name" class="question" id="nme" required autocomplete="off" />
+                                                                <label for="nme"><span>Pick your choice of Food</span></label>
+                                                                <input type="submit" value="Submit!" />
+                                                        </div>
+                                                </div>
+                                                <div class="container2">
+                                                                <button class="round-border" type="button" onclick="showHide(event)" href="#">Lunch</button>
+                                                                
+                                                                
+                                                                <div class="progressAnimation" style="display:none">
+                                                                        
+                                                                        <input type="text" name="name" class="question" id="nme" required autocomplete="off" />
+                                                                        <label for="nme"><span>Pick your choice of Food</span></label>
+                                                                        <input type="submit" value="Submit!" />
+                                                                </div>
+                                                </div>
+                                                <div class="container3">
+                                                                <button class="round-border" type="button" onclick="showHide(event)" href="#">Dinner</button>
+                                                                
+                                                                
+                                                                <div class="progressAnimation" style="display:none">
+                                                                        
+                                                                        <input type="text" name="name" class="question" id="nme" required autocomplete="off" />
+                                                                        <label for="nme"><span>Pick your choice of Food</span></label>
+                                                                        <input type="submit" value="Submit!" />
+                                                                </div>
+                                                </div>
+                                                <div class="container4">
+                                                                <button class="round-border" type="button" onclick="showHide(event)" href="#">Snacks</button>
+                                                                
+                                                                
+                                                                <div class="progressAnimation" style="display:none">
+                                                                        
+                                                                        <input type="text" name="name" class="question" id="nme" required autocomplete="off" />
+                                                                        <label for="nme"><span>Pick your choice of Food</span></label>
+                                                                        <input type="submit" value="Submit!" />
+                                                                </div>
+                                                </div>
+                                                <div class="container6">
+                                                        <button class="round-border" type="button" onclick="showHide(event)" href="#">Excercise</button>
+                                                        
+                                                        
+                                                        <div class="progressAnimation" style="display:none">
+                                                                
+                                                                <input type="text" name="name" class="question" id="nme" required autocomplete="off" />
+                                                                <label for="nme"><span>Pick your choice of Activity</span></label>
+                                                                <input type="submit" value="Submit!" />
+                                                        </div>
+                                                </div>
+                                        
+                                                <div class="container5" id="wgoal">
+                                                                <div class="weightUpdate">
+                                                                                <ul style="list-style: none;">
+
+                                                                                                <li>Current Weight</li>
+                                                                                                <input type="number" value=""  name="cuweight"
+                                                                                                    style="width:150px; background-color:#eaeaea; color:black;">
+                                                                                                <li>Target Weight</li>
+                                                                                                <input type="number" value=""  name="tweight"
+                                                                                                        style="width:150px; background-color:#eaeaea; color:black;">
+                                                                                                <li> Amount of Weight Loss</li>
+                                                                                                    <select class="lossweight" id="lossweight" name="lossweight" style="width:150px; background-color:#eaeaea; color:black;">
+                                                                                                        <option value="" disabled selected>Select</option>
+                                                                                                        <option value="0">O</option>
+                                                                                                        <option value="1">1</option>
+                                                                                                        <option value="2">2</option>
+                                                                                                        <option value="3">3</option>
+                                                                                                        <option value="4">4</option>
+                                                                                                        <option value="5">5</option>
+                                                                                                        <option value="6">6</option>
+                                                                                                        <option value="7">7</option>
+                                                                                                        <option value="8">8</option>
+                                                                                                        <option value="9">9</option>
+                                                                                                        <option value="10">10</option>
+                                                                                                        
+                                                                
+                                                                                                    </select>
+                                                                                </ul>
+                                                                        <div class="weightUpdate_box">
+                                                                                
+                                                                        </div>
+                                                                                <button class="btnUpdateWeight" ng-click="updateWeight()">Update Weight</button>
+                                                                 </div>
+                                                </div>
+
+                                
+                                   
+                                       
+
+
+
+                        </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </body>
+        <footer>&copy;2018 Cygen HealthTech</footer>
+    </div>
+
+</html>
+
